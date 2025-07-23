@@ -1,0 +1,30 @@
+{
+  "name": "des",
+  "id": 27,
+  "devices": {
+    "P_load": {
+      "path": "data/6-bus/p_load_data.csv",
+      "index_col": 27,
+      "magnification factor": 1
+    },
+    "H_load": {
+      "path": "data/6-bus/h_load_data.csv",
+      "index_col": 27,
+      "magnification factor": 0.15942661982269812
+    },
+    "Q_load": {
+      "path": "data/6-bus/q_load_data.csv",
+      "index_col": 27,
+      "magnification factor": 1
+    },
+    "EH": {
+      "P_max": 500,
+      "eta": 0.95
+    },
+    "EHP": {
+      "cop": 3.3918174190538553,
+      "P_max": 1489.7138834774212,
+      "P_min": 0
+    }
+  }
+}

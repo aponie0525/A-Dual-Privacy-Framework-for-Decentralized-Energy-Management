@@ -1,0 +1,35 @@
+{
+  "name": "des",
+  "id": 55,
+  "devices": {
+    "P_load": {
+      "path": "data/6-bus/p_load_data.csv",
+      "index_col": 55,
+      "magnification factor": 1
+    },
+    "H_load": {
+      "path": "data/6-bus/h_load_data.csv",
+      "index_col": 55,
+      "magnification factor": 0.17728912256868776
+    },
+    "Q_load": {
+      "path": "data/6-bus/q_load_data.csv",
+      "index_col": 55,
+      "magnification factor": 1
+    },
+    "PV": {
+      "path": "data/6-bus/pv_data.csv",
+      "index_col": 55,
+      "magnification factor": 1
+    },
+    "EH": {
+      "P_max": 500,
+      "eta": 0.95
+    },
+    "EHP": {
+      "cop": 3.37041056419263,
+      "P_max": 1665.8904448630765,
+      "P_min": 0
+    }
+  }
+}
