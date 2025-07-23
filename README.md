@@ -102,6 +102,19 @@ The simulation will stop once the primal and dual errors fall below a predefined
 
 > **Running Time**: 92.75s。
 
+## Instructions for use
+To run the simulation on a single PC and your own data, follow these steps:
+1. Clone the repository to your local machine.
+2. Install the required Python packages (cvxpy, numpy, pandas, networkx, tenseal, osqp).
+3. Data Preparation: Input the raw data for renewable energy generation, thermal and electric loads, and power grid information into the corresponding CSV files under the `demo/data/6-bus/` directory (e.g., `pv_data.csv`, `wp_data.csv`, etc.).
+4. System Configuration Upload: Configure the presence of each type of device for each Distributed Energy System (DES) in the `des_config.csv` file, using `0` to indicate absence and `1` to indicate presence.
+5. Generate Configuration Files:
+   * Run the `create_json.py` script to automatically generate configuration files for each DES;
+   * Run the `create_network_config.py` script to generate the power grid configuration file;
+   * If you wish to modify any device parameters, you may manually edit the corresponding configuration file located at `data/6-bus/des{i}_config.json`.
+6. Start the Simulation: Execute the main script `main.py` to initiate the simulation and optimization process for the interconnected distributed energy systems.
+For further customization or debugging, please ensure that all data files are formatted correctly and adjust configuration parameters as needed.
+> **Note**: The simulation reads network and device configurations from JSON and CSV files located in the data/ directory. The network configuration file (network_config.json) specifies the topology of the power grid, including the number of nodes, edges, and devices connected to each node. The device configuration file (des{i}_config.json) specifies the operational constraints and cost functions of each DES unit, including the number of devices, their types, and their capacities.
 
 ## Other information
 
