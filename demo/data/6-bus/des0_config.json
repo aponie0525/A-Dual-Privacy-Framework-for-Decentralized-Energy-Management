@@ -1,0 +1,20 @@
+{
+  "name": "des",
+  "id": 1,
+  "devices": {
+    "GI": {
+      "P_buy_max": 100000,
+      "P_sell_max": 100000,
+      "price_buy": {
+        "path": "data/6-bus/price.csv",
+        "index_col": "price",
+        "magnification factor": 1
+      },
+      "price_sell": {
+        "path": "data/6-bus/price.csv",
+        "index_col": "price",
+        "magnification factor": 0.5
+      }
+    }
+  }
+}
